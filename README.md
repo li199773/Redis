@@ -25,4 +25,4 @@ MongoDB
 ```
 ****
 ## 2.redis五种数据类型
-String数据类型、List 数据类型、Hash数据类型（散列类型）、set数据类型（无序集合）、Sorted Set数据类型 (zset、有序集合)。
+### String数据类型、List 数据类型、Hash数据类型（散列类型）、set数据类型（无序集合）、Sorted Set数据类型 (zset、有序集合)。
