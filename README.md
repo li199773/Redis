@@ -24,5 +24,5 @@ MongoDB
 可以根据数据的特点替代RDBMS ，成为独立的数据库。或者配合RDBMS，存储特定的数据
 ```
 ****
-## 2.redis五种数据类型
-### String数据类型、List 数据类型、Hash数据类型（散列类型）、set数据类型（无序集合）、Sorted Set数据类型 (zset、有序集合)。
+## 2.`redis`五种数据类型
+### `String`数据类型、`List`数据类型、`Hash`数据类型（散列类型）、`set`数据类型（无序集合）、`Sorted Set`数据类型 (zset、有序集合)。
