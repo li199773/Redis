@@ -49,4 +49,4 @@ MongoDB
     no-appendfsync-on-rewrite # 作用： 后台执行（RDB的save | aof重写）时appendfsync设为no
     auto-aof-rewrite-percentage # 作用： 自动触发AOF重写no-appendfsync-on-rewrite no
     aof-load-truncated # 作用：指定当发生AOF文件末尾截断时，加载文件还是报错退出
-
+    aof-use-rdb-preamble # 作用： 开启混合持久化，更快的AOF重写和启动时数据恢复
