@@ -40,10 +40,17 @@ MongoDB
 ### 3.3 AOF机制
     AOF机制以日志的形式记录 Redis 的每一个写操作，将 Redis 执行过的所有写指令保存下来，以追加的形式保存到 AOF 文件 (默认为 appendonly.aof) 中当需要恢复数据时，Redis 会重新执行 AOF 文件中的写指令，来达到恢复数据的目的。
 ### 3.4AOF配置
-appendonly no # 是否开启aof
-appendfilename "appendonly.aof" # 文件名
+    appendonly no # 是否开启aof
+    appendfilename "appendonly.aof" # 文件名
+    #磁盘同步策略 默认每秒一次  
+    # appendfsync always  # 每次
+    appendfsync everysec # 每秒一次
+    # appendfsync no # 由操作系统执行，默认Linux配置最多丢失30秒
+## no-appendfsync-on-rewrite
 
-#磁盘同步策略 默认每秒一次  
-# appendfsync always  # 每次
-appendfsync everysec # 每秒一次
-# appendfsync no # 由操作系统执行，默认Linux配置最多丢失30秒
+作用： 后台执行（RDB的save | aof重写）时appendfsync设为no
+
+```
+no-appendfsync-on-rewrite no
+```
+
