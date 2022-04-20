@@ -45,8 +45,8 @@ MongoDB
     #磁盘同步策略 默认每秒一次  
     # appendfsync always  # 每次
     appendfsync everysec # 每秒一次
-    # appendfsync no # 由操作系统执行，默认Linux配置最多丢失30秒
+    appendfsync no # 由操作系统执行，默认Linux配置最多丢失30秒
     no-appendfsync-on-rewrite # 作用： 后台执行（RDB的save | aof重写）时appendfsync设为no
-    # auto-aof-rewrite-percentage # 作用： 自动触发AOF重写no-appendfsync-on-rewrite no
+    auto-aof-rewrite-percentage # 作用： 自动触发AOF重写no-appendfsync-on-rewrite no
 
 
