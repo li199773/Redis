@@ -30,7 +30,7 @@ MongoDB
 ****
 ## 3.数据持久化
 ### 3.1 RDB机制
-RDB 是 Redis DataBase 的缩写，即内存块照。因为Redis的数据时存在内存中的，当**服务器宕机**时，Redis中存储的数据就会丢失。这个时候就需要内存快照来恢复Redis中的数据了。快照就是在某一时刻，将Redis中的所有数据，以文件的形式存储起来。
+### RDB 是 Redis DataBase 的缩写，即内存块照。因为Redis的数据时存在内存中的，当**服务器宕机**时，Redis中存储的数据就会丢失。这个时候就需要内存快照来恢复Redis中的数据了。快照就是在某一时刻，将Redis中的所有数据，以文件的形式存储起来。
 ### 3.2 RDB配置
     1. SNAPSHOTTING
     2. 开启保存出错停止写入功能（默认开启）
@@ -38,7 +38,7 @@ RDB 是 Redis DataBase 的缩写，即内存块照。因为Redis的数据时存�
     4. RDB文件校验（默认开启）
     5. 指定本地数据库文件名，一般采用默认的 dump.rdb
 ### 3.3 AOF机制
-    AOF机制以日志的形式记录 Redis 的每一个写操作，将 Redis 执行过的所有写指令保存下来，以追加的形式保存到 AOF 文件 (默认为 appendonly.aof) 中当需要恢复数据时，Redis 会重新执行 AOF 文件中的写指令，来达到恢复数据的目的。
+### AOF机制以日志的形式记录 Redis 的每一个写操作，将 Redis 执行过的所有写指令保存下来，以追加的形式保存到 AOF 文件 (默认为 appendonly.aof) 中当需要恢复数据时，Redis 会重新执行 AOF 文件中的写指令，来达到恢复数据的目的。
 ### 3.4 AOF配置
     appendonly no # 是否开启aof
     appendfilename "appendonly.aof" # 文件名
