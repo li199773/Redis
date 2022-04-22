@@ -67,5 +67,5 @@ MongoDB
 ### 2.缓存穿透
 意味着有特殊请求在查询一个不存在的数据，**即数据不存在 Redis 也不存在于数据库。**
 1. 创建布隆过滤器：
-    BF.RESERVE {key} {error_rate} {capacity} [EXPANSION {expansion}] [NONSCALING]
+        BF.RESERVE {key} {error_rate} {capacity} [EXPANSION {expansion}] [NONSCALING]
 ### 详情见`7.布隆过滤器.md`
