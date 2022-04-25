@@ -91,4 +91,4 @@ requirepass 123456     #设置redis密码
 masterauth 123456    #主从同步master的密码
 replicaof 192.168.81.100 6379
 ```
-
+### 2.主机
