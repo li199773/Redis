@@ -116,3 +116,6 @@ MongoDB
     repl_backlog_first_byte_offset:1
     repl_backlog_histlen:1470
 ### 4.主机插入数据之后从机同样可以查看
+    set k1 1 k2 2 k3 3 k4 4 
+### 从节点默认是只读的，如果支持写 需要设置如下值 no,然后重启redis服务 才能有效。
+    replica-read-only no
