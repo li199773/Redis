@@ -92,3 +92,12 @@ masterauth 123456    #主从同步master的密码
 replicaof 192.168.81.100 6379
 ```
 ### 2.主机
+    bind 0.0.0.0            #表示redis允许所有地址连接。默认127.0.0.1，仅允许本地连接。
+    daemonize yes             #允许redis后台运行
+    logfile "/usr/local/bin/redis/redis.log"    #设置redis日志存放路径
+    requirepass "123456"        #设置redis密码
+    protected-mode no      #设置为no，允许外部网络访问
+    port 6379             #修改redis监听端口(可以自定义)
+    pidfile "/usr/local/bin/redis/redis.pid"  #pid存放目录
+    requirepass 123456     #设置redis密码
+    masterauth 123456    #主从同步master的密码
