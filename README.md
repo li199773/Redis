@@ -100,3 +100,18 @@ MongoDB
     requirepass 123456     #设置redis密码
     masterauth 123456    #主从同步master的密码
 ### 3.启动查看状态
+    # 显示有两个从机
+    # Replication
+    role:master
+    connected_slaves:2
+    slave0:ip=192.168.81.101,port=6379,state=online,offset=1470,lag=1
+    slave1:ip=192.168.81.102,port=6379,state=online,offset=1470,lag=1
+    master_failover_state:no-failover
+    master_replid:e423bf4da80cd655727c45f1c06d099910228e04
+    master_replid2:0000000000000000000000000000000000000000
+    master_repl_offset:1470
+    second_repl_offset:-1
+    repl_backlog_active:1
+    repl_backlog_size:1048576
+    repl_backlog_first_byte_offset:1
+    repl_backlog_histlen:1470
