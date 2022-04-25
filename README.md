@@ -115,3 +115,4 @@ MongoDB
     repl_backlog_size:1048576
     repl_backlog_first_byte_offset:1
     repl_backlog_histlen:1470
+### 4.主机插入数据之后从机同样可以查看
