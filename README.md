@@ -1,4 +1,4 @@
-# `Redis` python操作、主从复制、RDB、AOF、哨兵模式
+# `Redis python操作、主从复制、RDB、AOF、哨兵模式`
 ****
 ## 1.数据库对比
 Memcache
