@@ -99,3 +99,4 @@ MongoDB
     pidfile "/usr/local/bin/redis/redis.pid"  #pid存放目录
     requirepass 123456     #设置redis密码
     masterauth 123456    #主从同步master的密码
+### 3.启动查看状态
