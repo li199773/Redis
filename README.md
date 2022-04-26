@@ -69,6 +69,7 @@ MongoDB
     1. 创建布隆过滤器：
     BF.RESERVE {key} {error_rate} {capacity} [EXPANSION {expansion}] [NONSCALING]
 ### 详情见`7.布隆过滤器.md`
+****
 ## 6.主从复制
 ### Slave 启动成功连接到 master 后会发送一个 sync 同步命令，Master 接到命令后，会启动后台的存盘进程，同时收集所有接收到的用于修改数据集命令，在后台进程执行完毕后，master 将传送整个数据文件到 salve，并完成一次完整的同步。
 ### 主机数据更新后根据配置和策略， 自动同步到备机的master/slaver机制，**Master**以写为主，**Slave**以读为主
